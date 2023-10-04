@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-xyz" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="scrollable-element" class="scrollable-content">
+
+    <nav class="navbar navbar-expand-lg  navba-col">
+
+        <a class="navbar-brand nav-h" href="index.html">"HAPPY MEALS"</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index1.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sign in
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item " href="#">Menu</a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item " href="#">Add Cart Items</a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Payment</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sign out</a>
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#"></a>
+                </li>
+            </ul>
+            <form class="form-inline" onsubmit="handleSearch(event)">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                    list="options" id="search-input">
+                <datalist id="options">
+                    <option value="Dishes" data-url="index1.html">
+                    <option value="Main Course" data-url="index5.html">
+                    <option value="Accompaniments" data-url="index6.html">
+                    <option value="Desserts" data-url="index7.html">
+                    <option value="Beverages" data-url="index8.html">
+                        <!-- Add more options as needed -->
+                </datalist>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="bg-container d-flex flex-column justify-content-end">
+        <div class="d-flex flex-column">
+            <div class="d-flex flex-row justify-content-center">
+                <a href="index1.html" class="card-link">
+                    <div class="foodcard1 center-card" id="sectioncard">
+                        <div>
+                            <h1 class="cardheading">Dishes</h1>
+                            <p class="para">"Delight your palate with our delectable dishes!"</p>
+                            <button onclick="location.href='index1.html'" class="btn btn-light">Order Now</button>
+                        </div>
+                        <img src="bg24.avif" class="food-img">
+                    </div>
+                </a>
+            </div>
+       
+            <div class="d-flex flex-row justify-content-center">
+                <a href="index5.html" class="card-link">
+                    <div class="foodcard1 middlecard">
+                        <img src="bg16.avif" class="food1-img">
+                        <div>
+                            <h1 class="cardheading">Main Course</h1>
+                            <p class="para">"Main course dishes are the primary and substantial dishes that form the
+                                main part of a meal."</p>
+                            <button onclick="location.href='index5.html'" class="btn btn-light">Order Now</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="index6.html" class="card-link">
+                    <div class="foodcard1 middlecard">
+                        <img src="bg22.avif" class="food1-img">
+                        <div>
+                            <h1 class="cardheading">Accompaniments</h1>
+                            <p class="para">"Delicious and appetizing side dishes to complement your meal."</p>
+                            <button onclick="location.href='index6.html'" class="btn btn-light">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </a>
+
+        <div class="d-flex flex-row justify-content-end">
+            <a href="index7.html" class="card-link">
+                <div class="foodcard2">
+                    <img src="bg20.jpg" class="food1-img">
+                    <div>
+
+                        <h1 class="cardheading">Desserts </h1>
+                        <p class="para">"Served after a meal, providing a delightful and indulgent ending to the dining
+                            experience."</p>
+                        <button onclick="location.href='desserts.html'" class="btn btn-light">Order Now</button>
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="index8.html" class="card-link">
+                <div class="foodcard2">
+                    <img src="bg21.avif" class="food1-img">
+                    <div>
+                        <h1 class="cardheading">Beverages</h1>
+                        <p class="para">"An assortment of cool and refreshing beverages to quench your thirst and
+                            delight
+                            your taste buds."</p>
+                        <button onclick="location.href='beverages.html'" class="btn btn-light">Order Now</button>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+        <div class="foodcard">
+            <h1 class="main-heading">"HAPPY MEALS"</h1>
+            <p class="slogan">where deliciousness meets convenience, bringing smiles to every bite!</p>
+            <p class="paragraph">Satisfy your cravings with a swift and seamless food ordering experience, bringing
+                deliciousness to your doorstep in minutes. Indulge in a hassle-free culinary journey, where convenience
+                meets delectable flavors, all at the click of a button.</p>
+            <button onclick="location.href='index1.html'" class="button">Order Now</button>
+        </div>
+        <footer class="mainfooter" role="contentinfo">
+            <div class="footer-middle">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>ABOUT</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#"></a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Cart</a></li>
+        
+                                <li><a href="#">Food item Cards</a>
+                                    <li><a href="#">FAQs</a></li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>HOME</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="index1.html">Dishes</a></li>
+                                <li><a href="index5.html">Main-Course</a></li>
+                                <li><a href="index6.html">Accompaniments</a></li>
+                                <li><a href="index8.html">Beverages</a></li>
+                                <li><a href="index7.html">Desserts</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4><i>"HAPPY MEALS"</I></h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">Ingredients</a></li>
+                                <li><a href="#">Rating</a></li>
+                                <li><a href="#">Sign In</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Follow Us</h4>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; 2023- <i>"HAPPY MEALS"</i> All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+        
+   
+            
+            
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

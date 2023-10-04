@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+   
+  }
+  html, body {
+    width: auto!important; overflow-x: hidden!important
+  } 
+  /* Hide the scrollbar on the right side */
+  .scrollable-content {
+    overflow: auto;
+  }
+  
+  .hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* Chrome, Safari, Opera */
+    }
+  }
+  
+  
+  .bg-container {
+    background-image: url("bg12.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+  
+  }
+  
+  .foodcard {
+    text-align: center;
+    background-color: #f6c56e;
+    padding: 50px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+  }
+  
+  .paragraph {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: medium;
+    font-style: italic;
+    font-size: 20px;
+  }
+  
+  .main-heading {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+  }
+  
+  .button {
+    background-color: #ffffff;
+    font-weight: bolder;
+    font-size: 17px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .button:hover {
+    background-color:rgb(238, 197, 127);
+  }
+  
+  .slogan {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .foodcard1,
+  .foodcard2 {
+    background-color: black;
+    color: #ffffff;
+    margin: 20px;
+    width: 400px;
+    height:450px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  
+  .card-link a {
+    text-decoration: none;
+  }
+  
+  .card-link a:hover,
+  .card-link a:active {
+    background-color: rgb(225, 225, 133);
+  }
+  
+  .food-img,
+  .food1-img {
+    height: 180px;
+    width: 200px;
+    border-radius: 100%;
+    margin: 20px;
+  }
+  
+  .center-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .middle-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+  }
+  
+  .cardheading {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Additional Styles */
+  
+  .header {
+    height: 30px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .para{
+    font-size:20px;
+    font-style:italic;
+    font-family: "cursive";
+  }
+  .navba-col{
+    background-color: #f6c56e;
+    color:black;
+  }
+  .navbar-nav .nav-link {
+    color: black; /* Change the color to black */
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: black;
+    background-color: transparent;
+}
+.nav-h{
+    color:black;
+    font-size: 35px;
+    font-weight: 700;
+    font-style:oblique;
+}
+.nav{
+  height:10px;
+}
+
+footer {
+  background: #464a47;
+ 
+  color: white;
+  
+  width:99vw;
+  padding-left: 80px;
+  margin: 0px;
+  margin-right: 0px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}

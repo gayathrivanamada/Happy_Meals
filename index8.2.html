@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style6.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navba-col">
+        <a class="navbar-brand nav-h" href="index.html">"HAPPY MEALS"</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index1.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sign in
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Menu</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Add Cart Items</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Payment</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sign out</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#"></a>
+                </li>
+            </ul>
+            <form class="form-inline" onsubmit="handleSearch(event)">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                    list="options" id="search-input">
+                <datalist id="options">
+                    <option value="Dishes" data-url="index1.html">
+                        <option value="Main Course" data-url="index5.html">
+                        <option value="Accompaniments" data-url="index6.html">
+                        <option value="Desserts" data-url="index7.html">
+                        <option value="Beverages" data-url="index8.html">
+                        <!-- Add more options as needed -->
+                </datalist>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="bg-container">
+        <div class="food-heading">
+            <h1 class="food-heading">"HAPPY MEALS"</h1>
+            <p class="slogan">where deliciousness meets convenience, bringing smiles to every bite!</p>
+        </div>
+    </div>
+    <h1 class="main-heading">Mocktails</h1>
+    <div class="food-card-container d-flex flex-row">
+        <div>
+            <h1 class="food-card-heading">Virgin Mojito</h1>
+            <p class="food-card-paragraph">A refreshing symphony of zesty lime, crisp mint leaves, and a touch of sweetness, all fizzed up with sparkling soda water. This invigorating mocktail is a cooling delight that will transport you to tropical paradise with every sip! 🍹🍃✨
+               </p>
+            <p class="price">₹250&nbsp;&nbsp;&nbsp;&nbsp;Discount (10% off)</p>
+            <button class="btn btn-light">Order Now</button>
+            <button onclick="location.href='sub1.html'" class="button1">Ingredients</button>
+            <button class="button">Add to Cart</button>
+            <p class="rating-heading">Rating</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <button class="fa fa-star star">&nbsp;4.0</button>
+        </div>
+        <img src="bg127.jpeg" class="food-card-image" />
+    </div>
+    <div class="food-card-container d-flex flex-row">
+        <div>
+            <h1 class="food-card-heading">Shirley Temple</h1>
+            <p class="food-card-paragraph">A sparkling sensation of ginger ale, sweet grenadine syrup, and a cherry on top. This innocent indulgence delights with its sweetness and fizzy allure, making it a delicious treat for all ages! 🍒🍹💫</p>
+            <p class="price">₹300&nbsp;&nbsp;&nbsp;&nbsp;Discount (50% off)</p>
+            <button class="btn btn-light">Order Now</button>
+            <button class="button1">Ingredients</button>
+            <button class="button">Add to Cart</button>
+            <p class="rating-heading">Rating</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-half-o"></span>
+            <button class="fa fa-star star">&nbsp;4.6</button>
+        </div>
+        <img src="bg128.avif"class="food-card-image" />
+    </div>
+    <div class="food-card-container d-flex flex-row">
+        <div>
+            <h1 class="food-card-heading">Strawberry Lemonade</h1>
+           
+            <p class="food-card-paragraph">
+
+                A blissful fusion of juicy strawberries, tangy lemon juice, and a hint of sweetness. This refreshing elixir dances on your tongue, delivering a burst of fruity goodness that will leave you craving more! 🍓🍋🍹✨</p>
+            <p class="price">₹150&nbsp;&nbsp;&nbsp;&nbsp;Discount (10% off)</p>
+            <button class="btn btn-light">Order Now</button>
+            <button class="button1">Ingredients</button>
+            <button class="button">Add to Cart</button>
+            <p class="rating-heading">Rating</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-half-o"></span>
+            <button class="fa fa-star star">&nbsp;4.5</button>
+        </div>
+        <img src="bg129.avif" class="food-card-image" />
+    </div>
+
+    <div class="food-card-container d-flex flex-row">
+        <div>
+            <h1 class="food-card-heading">Blueberry Mojito Mocktail</h1>
+            <p class="food-card-paragraph">
+                A tantalizing blend of plump blueberries, refreshing mint leaves, zesty lime juice, and a sparkling fizz. This berrylicious delight will transport you to a tropical paradise, enchanting your taste buds with every sip!🌿🍹💫</p>
+            <p class="price">₹300&nbsp;&nbsp;&nbsp;&nbsp;Discount (10% off)</p>
+            <button class="btn btn-light">Order Now</button>
+            <button class="button1">Ingredients</button>
+            <button class="button">Add to Cart</button>
+            <p class="rating-heading">Rating</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <button class="fa fa-star star">&nbsp;4.0</button>
+        </div>
+        <img src="bg133.avif" class="food-card-image" />
+    </div>
+    <div class="container1">
+        <button onclick="location.href='index8.1.html'" class="btn btn-light prev">Previous</button>
+        
+         <button onclick="location.href='index8.3.html'" class="btn btn-light nex">Next</button>
+         <button onclick="location.href='index8.2.html'"class="btn btn-light" >1</button>
+         <button onclick="location.href='index8.3.html'"class="btn btn-light " >2</button>
+         <button  onclick="location.href='index8.4.html'"class="btn btn-light">></button>
+        
+     </div>
+     <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4>ABOUT</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#"></a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Cart</a></li>
+    
+                            <li><a href="#">Food item Cards</a>
+                                <li><a href="#">FAQs</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4>HOME</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index1.html">Dishes</a></li>
+                            <li><a href="index5.html">Main-Course</a></li>
+                            <li><a href="index6.html">Accompaniments</a></li>
+                            <li><a href="index8.html">Beverages</a></li>
+                            <li><a href="index7.html">Desserts</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4><i>"HAPPY MEALS"</I></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Ingredients</a></li>
+                            <li><a href="#">Rating</a></li>
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow Us</h4>
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 copy">
+                    <p class="text-center">&copy; 2023- <i>"HAPPY MEALS"</i> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script2.js">
+
+    </script>
+
+</body>
+
+</html>

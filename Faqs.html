@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navba-col">
+        <a class="navbar-brand nav-h" href="index.html">"HAPPY MEALS"</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index1.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sign in
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Menu</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Add Cart Items</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Payment</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sign out</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#"></a>
+                </li>
+            </ul>
+            <form class="form-inline" onsubmit="handleSearch(event)">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                    list="options" id="search-input">
+                <datalist id="options">
+                    <option value="Dishes" data-url="index1.html">
+                        <option value="Main Course" data-url="index5.html">
+                        <option value="Accompaniments" data-url="index6.html">
+                        <option value="Desserts" data-url="index7.html">
+                        <option value="Beverages" data-url="index8.html">
+                    <!-- Add more options as needed -->
+                </datalist>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="bg-container">
+        <div class="food-heading">
+            <h1 class="food-heading">"HAPPY MEALS"</h1>
+            <p class="slogan">where deliciousness meets convenience, bringing smiles to every bite!</p>
+        </div>
+    </div>
+    <h1 class="main-heading">Dishes</h1>
+    <div class="food-card-container d-flex flex-row">
+        <div>
+            <h1 class="food-card-heading">Palak Paneer</h1>
+            <p class="food-card-paragraph">Palak Paneer, a traditional Indian delicacy, harmoniously combines
+                spinach and soft paneer in a fragrant and nutritious gravy. With its creamy texture and vibrant
+                green hue, this vegetarian delight is best savored alongside roti, naan, or rice, captivating the
+                taste buds of Indian food enthusiasts and those in search of flavorful meatless options.</p>
+            <p class="price">₹300&nbsp;&nbsp;&nbsp;&nbsp;Discount (10% off)</p>
+            <button class="btn btn-light">Order Now</button>
+            <button onclick="location.href='sub1.html'" class="button1">Ingredients</button>
+            <button class="button">Add to Cart</button>
+            <p class="rating-heading">Rating</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-half-o"></span>
+            <span class="fa fa-star"></span>
+            <button class="fa fa-star star">&nbsp;3.5</button>
+        </div>
+        <img src="bg7.avif" class="food-card-image" />
+    </div>
+    <div class="food-card-container d-flex flex-row">
+        <div>
+            <h1 class="food-card-heading">Rajma</h1>
+            <p class="food-card-paragraph">Rajma, a beloved North Indian delicacy, combines tender kidney beans and
+                aromatic spices in a flavorful tomato-based gravy, creating a protein-rich and satisfying meal
+                enjoyed with rice or roti. Its comforting taste and wholesome goodness make it a favorite among
+                Indian food enthusiasts.</p>
+            <p class="price">₹350&nbsp;&nbsp;&nbsp;&nbsp;Discount (50% off)</p>
+            <button class="btn btn-light">Order Now</button>
+            <button onclick="location.href='sub2.html'" class="button1">Ingredients</button>
+            <button class="button">Add to Cart</button>
+            <p class="rating-heading">Rating</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-half-o"></span>
+            <span class="fa fa-star"></span>
+            <button class="fa fa-star star">&nbsp;4.5</button>
+        </div>
+        <img src="bg8.avif" class="food-card-image" />
+    </div>
+    <div class="food-card-container d-flex flex-row">
+        <div>
+            <h1 class="food-card-heading">Dal Makani</h1>
+            <p class="food-card-paragraph">Dal Makhani, a popular Punjabi dish, showcases a velvety blend of black
+                lentils and kidney beans simmered in a rich and creamy tomato-based gravy. With its aromatic spices
+                and buttery flavor, it is a true indulgence that pairs perfectly with naan or rice, making it a
+                must-try for lovers of North Indian cuisine.</p>
+            <p class="price">₹150&nbsp;&nbsp;&nbsp;&nbsp;Discount (10% off)</p>
+            <button class="btn btn-light">Order Now</button>
+            <button onclick="location.href='sub3.html'" class="button1">Ingredients</button>
+            <button class="button">Add to Cart</button>
+            <p class="rating-heading">Rating</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <button class="fa fa-star star">&nbsp;3.0</button>
+        </div>
+        <img src="bg9.avif" class="food-card-image" />
+    </div>
+
+    <div class="food-card-container d-flex flex-row">
+        <div>
+            <h1 class="food-card-heading">Butter Chicken</h1>
+            <p class="food-card-paragraph">Indulge in the scrumptious delight of Butter Chicken, a beloved Indian
+                cuisine masterpiece. Succulent chicken pieces are bathed in a luscious, creamy tomato sauce, creating
+                a mouthwatering symphony of flavors. Treat your taste buds to this heavenly creation, perfect when
+                paired with soft naan bread or fluffy steamed rice. Prepare to embark on a culinary journey filled with
+                delectable sensations and pure yumminess.</p>
+            <p class="price">₹150&nbsp;&nbsp;&nbsp;&nbsp;Discount (10% off)</p>
+            <button class="btn btn-light">Order Now</button>
+            <button onclick="location.href='sub4.html'" class="button1">Ingredients</button>
+            <button class="button">Add to Cart</button>
+            <p class="rating-heading">Rating</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <button class="fa fa-star star">&nbsp;3.0</button>
+        </div>
+        <img src="bg28.avif" class="food-card-image" />
+    </div>
+    <div class="container1">
+        <button onclick="location.href='index.html'" class="btn btn-light prev">Previous</button>
+        
+         <button onclick="location.href='index2.html'" class="btn btn-light nex">Next</button>
+         <button onclick="location.href='index2.html'"class="btn btn-light" >1</button>
+         <button onclick="location.href='index3.html'"class="btn btn-light " >2</button>
+         <button  onclick="location.href='index4.html'"class="btn btn-light">></button>
+        
+     </div>
+     <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4>ABOUT</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#"></a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Cart</a></li>
+    
+                            <li><a href="#">Food item Cards</a>
+                                <li><a href="#">FAQs</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4>HOME</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index1.html">Dishes</a></li>
+                            <li><a href="index5.html">Main-Course</a></li>
+                            <li><a href="index6.html">Accompaniments</a></li>
+                            <li><a href="index8.html">Beverages</a></li>
+                            <li><a href="index7.html">Desserts</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4><i>"HAPPY MEALS"</I></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Ingredients</a></li>
+                            <li><a href="#">Rating</a></li>
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow Us</h4>
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 copy">
+                    <p class="text-center">&copy; 2023- <i>"HAPPY MEALS"</i> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+     
+
+    <script src="script1.js">
+        
+    </script>
+
+</body>
+
+</html>
+000000
